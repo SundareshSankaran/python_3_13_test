@@ -1,8 +1,8 @@
 # Python 3.13t (experimental version) - Quick start
 
-Python 3.13t is making the news (or atleast one corner of it) quite frequently, the major driver being the fact that this is the first version with the Global Interpreter Lock disabled.  This means that *potentially* Python is no longer constrained from being single threaded.
+Python 3.13t is making the news (or atleast one corner of it) quite frequently, the major driver being the fact that this is the first version with the Global Interpreter Lock disabled.  This means that *potentially* Python is no longer constrained from being single-threaded.
 
-Hold your horses, though, free-threaded Python has been released only experimentally.  It remains to be seen as to the benefit (and some corresponding risks) this may bring to the execution of machine learning and analytics workloads.
+Hold your horses, though, free-threaded Python has been released only experimentally.  It remains to be seen whether there's benefit (and risk) to  machine learning and analytics workloads.
 
 This repository is to provide a helping hand in installing Python 3.13t for experimentation.
 
