@@ -59,6 +59,8 @@ Run the attached [check_version.py](./check_version.py) file.
 (pyt) % python3.13t check_version.py
 ```
 
+The function is_gil_enable() should return false.
+
  ## References
 
  1. Stack Overflow [discussion](https://stackoverflow.com/questions/79122522/how-to-disable-the-gil-in-python3-13)
