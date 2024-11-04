@@ -45,9 +45,9 @@ For regular use, however, I seriously recommend using virtual environments.
 
 
 ```
-% $HOME/.pyenv/versions/3.13t-dev/bin/python3.13t -m venv pyt
+% $HOME/.pyenv/versions/3.13t-dev/bin/python3.13t -m venv py313t
 
-. pyt/bin/activate
+. py313t/bin/activate
 
 ```
 
@@ -56,10 +56,28 @@ For regular use, however, I seriously recommend using virtual environments.
 Run the attached [check_version.py](./check_version.py) file.
 
 ```
-(pyt) % python3.13t check_version.py
+(py313t) % python3.13t check_version.py
 ```
 
 The function is_gil_enable() should return false.
+
+
+**For comparison purposes,** also install Python 3.13 (without the free-threaded option)
+
+```
+pyenv install 3.13
+
+% $HOME/.pyenv/versions/3.13/bin/python3.13 -m venv py313
+
+. py313/bin/activate
+
+```
+
+## Tests
+
+TBD.  But, a starter program which illustrates and provides a nice intro, is [here](./gil_thread_example.py). Run with the 3.13t and just the 3.13 environment for a more apples-to-apples.
+
+Meanwhile, some quick [reviews](./Review.md) of articles which have talked about 3.13t.
 
  ## References
 
