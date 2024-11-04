@@ -67,7 +67,7 @@ The function is_gil_enable() should return false.
 ```
 pyenv install 3.13
 
-% $HOME/.pyenv/versions/3.13/bin/python3.13 -m venv py313
+% $HOME/.pyenv/versions/3.13.0/bin/python3.13 -m venv py313
 
 . py313/bin/activate
 
@@ -78,6 +78,21 @@ pyenv install 3.13
 TBD.  But, a starter program which illustrates and provides a nice intro, is [here](./gil_thread_example.py). Run with the 3.13t and just the 3.13 environment for a more apples-to-apples.
 
 Meanwhile, some quick [reviews](./Review.md) of articles which have talked about 3.13t.
+
+A quick [test](./gil_thread_example.py) with an attempt to run two threads results in the following, roughly 40% faster.
+
+```python
+# Output from Python 3.13 - single threaded
+
+# Total: 49999995000000
+# Total: 49999995000000
+# --- 0.6976718902587891 seconds ---
+
+# Output from Python 3.13t - free threaded
+# Total: 49999995000000
+# Total: 49999995000000
+# --- 0.4113438129425049 seconds ---
+```
 
  ## References
 
